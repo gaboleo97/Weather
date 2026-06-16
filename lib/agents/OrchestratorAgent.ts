@@ -11,7 +11,7 @@ export async function fetchWeather(input: LocationInput): Promise<WeatherRespons
   // Timestamp de inicio
   const started = new Date()
   const ts = started.toISOString()
-  let location: { lat: number; lon: number; name?: string }
+  let location: { lat: number; lon: number; name?: string } = { lat: 0, lon: 0 }
   try {
     if ('lat' in input && 'lon' in input) {
       location = { lat: input.lat, lon: input.lon, name: input.name }
