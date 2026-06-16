@@ -2,7 +2,7 @@
 // Resuelve una ciudad a coordenadas usando Open-Meteo Geocoding API.
 import type { GeoPoint } from './LocationAgent'
 
-const GEOCODE_API = 'https://geocoding.open-meteo.com/v1/search?name='
+const GEOCODE_API = 'https://geocoding-api.open-meteo.com/v1/search?name='
 
 export async function geocodeCity(city: string): Promise<{ lat: number; lon: number; name: string }> {
   const encoded = encodeURIComponent(city.trim())

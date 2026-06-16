@@ -4,6 +4,7 @@ export interface WeatherCurrent {
   windDirection: number;
   weatherCode?: number;
   time?: string;
+  precipitationProbability?: number;
 }
 
 export interface WeatherResponse {

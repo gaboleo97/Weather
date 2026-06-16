@@ -31,6 +31,10 @@ export const WeatherCard: React.FC<Props> = ({ data }) => {
             <div className="subtitle">Código Clima</div>
             <div style={{ fontSize: 20 }}>{current.weatherCode ?? '-'}</div>
           </div>
+          <div className="card" aria-label="precipitationProbability">
+            <div className="subtitle">Prob. Lluvia</div>
+            <div style={{ fontSize: 20 }}>{current.precipitationProbability != null ? `${current.precipitationProbability} %` : '-'}</div>
+          </div>
         </div>
       ) : (
         <div className="muted" style={{ marginTop: 8 }}>Cargando...</div>

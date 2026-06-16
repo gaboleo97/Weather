@@ -30,6 +30,7 @@ export async function fetchWeather(input: LocationInput): Promise<WeatherRespons
         windDirection: w.windDirection,
         weatherCode: w.weatherCode,
         time: w.time,
+        precipitationProbability: w.precipitationProbability,
       },
       timestamp: ts,
     }
